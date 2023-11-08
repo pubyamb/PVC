@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white; /* Set the overall background to white */
+}
+
+.content-container {
+    display: flex; /* This will lay out children (logo and form) in a row */
+    flex-direction: column; /* This ensures the flex items are stacked vertically */
+    align-items: center; /* This will vertically center the children */
+    justify-content: center; /* This will horizontally center the children */
+    padding: 20px;
+}
+
+.logo-container {
+    margin-bottom: 20px; /* Add some space between the logo and the form */
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+/* Input field styling */
+input[type=number] {
+    width: 100%; /* Adjust as needed */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    /* Other styles as needed */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Button styling */
+button {
+    background-color: #0972eb; /* Light blue color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #099ceb;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+
+/* Positioning for language switch and help link */
+#language-switch, #help-link {
+    position: absolute;
+    top: 10px;
+}
+
+#language-switch {
+    right: 10px;
+}
+
+#help-link {
+    left: 10px;
+}
+
+/* Logo styles */
+#coinmate-logo {
+    height: 150px; /* Adjust the size as needed */
+    display: block; /* To ensure it's treated as a block-level element */
+}

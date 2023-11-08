@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Crypto Tax Calculator for Natural Persons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="language-switch" style="position: absolute; top: 10px; right: 10px;">
+        <button onclick="switchLanguage('en')">EN</button>
+        <button onclick="switchLanguage('cz')">CZ</button>
+    </div>
+
+    <a href="https://coinmate.io/cz/zdaneni-kryptomen/" target="_blank" id="help-link" data-translate="helpLink">Tax Rules</a>
+    
+    <div class="content-container">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Coinmate Logo" id="coinmate-logo">
+        </div>
+        
+        <div class="container">
+            <h1 data-translate="title">Crypto Tax Calculator</h1>
+            
+            <form id="taxForm">
+                <div class="form-group">
+                    <label for="profit" data-translate="netProfitLabel">Profit from Crypto (CZK):</label>
+                    <input type="number" id="profit" name="profit" required>
+                </div>
+                <div class="form-group">
+                    <label for="profit2" data-translate="netProfitLabel2">Income from Other Sources (CZK):</label>
+                    <input type="number" id="profit2" name="profit2" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" data-translate="calculateButton">Calculate</button>
+                </div>
+            </form>
+            
+            <div id="result" data-translate="taxToBePaid"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
